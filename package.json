@@ -1,0 +1,15 @@
+{
+  "name": "Angularify",
+  "version": "0.0.0",
+  "description": "ang with browserify simple",
+  "devDependencies": {
+    "angular": "^1.2.19",
+    "angular-route": "^1.2.17-build.163.1",
+    "gulp": "^3.8.6",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.3.3",
+    "gulp-jshint": "^1.7.1",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-util": "^3.0.0"
+  }
+}
