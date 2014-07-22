@@ -1,11 +1,13 @@
 'use strict';
 
 var homeRoute = require('./home/homeRoute'),
-	mainModule = require('../main.js');
+	homeCtrl = require('./home/homeCtrl');
 
-console.log(mainModule);
-module.exports = function(mainModule){
-	return function($routeProvider){
-		$routeProvider.when('/',homeRoute(mainModule));
-	};
+module.exports = {
+	config : function(mainModule) {
+		mainModule.config(function($routeProvider) {
+			$routeProvider.when('/', homeRoute);
+		});
+		mainModule.controller('homeCtrl', homeCtrl);
+	}
 };
